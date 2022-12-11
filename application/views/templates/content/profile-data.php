@@ -72,6 +72,37 @@
 						    </div>
 						</div>
 				  	<?php endif; ?>
+
+					<!-- USER -->
+				  	<?php if($this->session->userdata('data')['level'] == 'User') : ?>
+				  		<div class="row">
+						    <div class="color-wrapper col-lg-12 col-md-12 col-sm-12">
+						      <label>STATUS</label>
+						      <input required="" type="text" id="status" readonly="" class="form-control" value="<?= $this->session->userdata('data')['level'] ?>">
+						    </div>
+						</div>
+
+						<div class="row pt-3">
+						    <div class="color-wrapper col-lg-12 col-md-12 col-sm-12">
+						      <label>Name</label>
+						      <input required="" type="text" id="nama" class="form-control" value="<?= $this->session->userdata('data')['nama'] ?>">
+						    </div>
+						</div>
+
+						<div class="row pt-3">
+						    <div class="color-wrapper col-lg-12 col-md-12 col-sm-12">
+						      <label>Email</label>
+						      <input required="" type="text" id="email" class="form-control" value="<?= $this->session->userdata('data')['email'] ?>">
+						    </div>
+						</div>
+
+						<div class="row pt-3">
+						    <div class="color-wrapper col-lg-12 col-md-12 col-sm-12">
+						      <label>Nomor Telepon</label>
+						      <input required="" type="text" id="user_phone" name="user_phone" class="form-control" value="0821345678">
+						    </div>
+						</div>
+				  	<?php endif; ?>
 				  	<input type="submit" id="save" class="btn btn-success btn-sm mt-5" value="Save">
 				</form>
 			</div>

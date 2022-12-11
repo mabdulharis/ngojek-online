@@ -1,5 +1,5 @@
 <?php $this->load->view('templates/header') ?>
-<form class="container" action="<?= base_url('pengaturan/lokasi/tambahlokasi'); ?>" method="post">
+<form class="container my-5 mx-auto py-5" action="<?= base_url('pengaturan/lokasi/tambahlokasi'); ?>" method="post" >
   <div class="mb-3">
     <label for="nama_lokasi" class="form-label">Nama Lokasi</label>
     <input type="text" class="form-control" id="nama_lokasi" name="nama_lokasi" aria-describedby="emailHelp">

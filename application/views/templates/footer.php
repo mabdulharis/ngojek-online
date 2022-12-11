@@ -1,4 +1,32 @@
-    <footer class="main-footer py-5">
+    <footer class="main-footer py-5 bg-footer">
+      <div class="container-fuild d-flex flex-row align-items-center justify-content-between px-5">
+        <div class="flex-column align-items-start">
+          <h1 class="mb-4" style="font-weight: bold;">Base Camp Kami</h1>
+          <div id="map" style="float: left;width: 600px;height: 400px;"></div>
+        </div>
+
+        <div class="d-flex flex-column align-items-end justify-content-around">
+          <div class="d-flex flex-row align-items-center my-4">
+            <img src="<?= base_url() ?>assets/images/demo/shards-logo.svg" alt="Example Navbar 1" class="pr-3" height="50">
+            <p class="m-0" style="font-size: 48px; font-weight: normal; color: black;">GO-GRAB</p>
+          </div>
+          
+          <ul class="navbar-nav d-flex flex-row align-items-center justify-content-between my-4">
+            <li class="nav-item mx-3 px-3">
+              <a href="" class="nav-link" style="font-size: 20px; font-weight: bold; color: white;">HOME</a>
+            </li>
+            <li class="nav-item mx-3 px-3">
+              <a href="" class="nav-link" style="font-size: 20px; font-weight: bold; color: white;">GROB-BIKE</a>
+            </li>
+            <li class="nav-item mx-3 px-3">
+              <a href="" class="nav-link" style="font-size: 20px; font-weight: bold; color: white;">GROB-FOOD</a>
+            </li>
+            <li class="nav-item mx-3 px-3">
+              <a href="" class="nav-link" style="font-size: 20px; font-weight: bold; color: white;">MY-ORDER</a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <p class="text-muted text-center small p-0 mb-4">&copy; Copyright 2022 — BSI NGo-jol Bareng</p>
       <div class="social d-table mx-auto">
         <a class="twitter mx-3 h4 d-inline-block text-secondary" href="#">
@@ -17,6 +45,7 @@
         </a>
       </div>
     </footer>
+    
   </div>
 
   <!-- DELETE FORM -->
@@ -60,6 +89,8 @@
 
   <!-- JavaScript--> 
   <div id="fb-root"></div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8AewbAt_4KU_32UGsdBZG3ITkVmw8pQA&libraries=places"></script>
+  <script src="<?=base_url('assets/js/maps.js')?>"></script>
   <script>
     (function (d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -83,6 +114,7 @@
         window.location.href = '<?= base_url() ?>login/logout'
       })
     })
+
 
   </script>
 </body>

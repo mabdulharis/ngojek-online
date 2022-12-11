@@ -23,3 +23,16 @@
     color: #000;
     -webkit-text-stroke: 2px rgb(46, 222, 46);
 }
+
+.bg-footer {
+    background-color: rgb(135, 223, 134);
+}
+
+.c-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 40px;
+    /* padding: 60px 0; */
+    align-items: center;
+    justify-content: center;
+}

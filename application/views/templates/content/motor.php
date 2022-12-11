@@ -1,16 +1,16 @@
 <?php $this->load->view('templates/header') ?>
 <div class="content clearfix pt-5 mt-5">
 		
-	<div id="colors" class="container-fluid mb-5">
+	<div id="colors" class="container mb-5">
 
 		<div class="section-title col-lg-8 col-md-10 ml-auto mr-auto text-center">
 		  <h3 class="mb-4 text-uppercase">order a Bike</h3>
 		  <p>Pilih lokasi tujuan</p>
 		</div>
 
-    <div class="d-flex align-items-center justify-content-center">
+    <div class="c-grid"> 
       <?php foreach($lokasi as $lk) : ?>
-      <div class="card mx-3" style="width: 18rem;">
+      <div class="card" style="width: 18rem;">
         <img src="<?= base_url().'/assets/images/upload/'.$lk->gambar ?>" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title"><?= $lk->nama_lokasi ?></h5>
